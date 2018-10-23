@@ -1,0 +1,40 @@
+{% extends 'store/layout.html' %}
+
+{% block content %}
+<div class="">
+
+</div>
+<hr class="my-5">
+<div class="col-lg-3 col-md-6 mb-4 mx-auto">
+  <!--Card-->
+  <div class="card">
+    <!--Card content-->
+    <div class="card-body">
+
+      <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+         <button type="submit" class="nav-link border border-light rounded waves-effect">Sign up</button>
+       </form>
+
+    </div>
+    <!--Card content-->
+  </div>
+  <!--Card-->
+  <hr class="my-5">
+</div>
+
+
+{% endblock %}

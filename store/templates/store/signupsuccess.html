@@ -1,0 +1,18 @@
+{% extends 'store/layout.html' %}
+
+{% block content %}
+<hr class="my-5">
+<div class="jumbotron text-xs-center">
+  <div class="mx-auto">
+    <h1 class="display-3">Sign Up Success!
+    </h1>
+    <p class="lead"><strong>We are glad to have you as our customer</strong>.</p>
+    <hr>
+    <p class="lead">
+      <a class="btn btn-primary btn-sm" href="{% url 'store:index' %}" role="button">Continue to homepage</a>
+    </p>
+  </div>
+
+</div>
+
+{% endblock %}

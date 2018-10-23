@@ -1,0 +1,15 @@
+__pycache__
+__pycache__/*
+*/__pycache__/*
+*.jpg
+*.jpeg
+*.png
+*/__pycache__
+*/*/__pycache__
+*.pyc
+musicstore/__pycache__/*
+<<<<<<< HEAD
+musicstore/__pycache__
+settings.py
+=======
+>>>>>>> ron-devt
